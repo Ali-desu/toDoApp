@@ -1,0 +1,108 @@
+body {
+    background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
+  overflow: hidden;
+  min-height: 100vh;
+  padding: 1rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(240, 0%, 50%);
+  font-family: 'Pixelify Sans', sans-serif;
+  text-align: center;
+  font-size: 140%;  
+
+  background-image: url('https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg');
+  background-size:cover;
+        -webkit-animation: slidein 100s;
+        animation: slidein 100s;
+
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+
+        -webkit-animation-direction: alternate;
+        animation-direction: alternate;
+}
+
+@-webkit-keyframes slidein {
+    from {background-position: top; background-size:3000px; }
+    to {background-position: -100px 0px;background-size:2750px;}
+    }
+    
+    @keyframes slidein {
+    from {background-position: top;background-size:3000px; }
+    to {background-position: -100px 0px;background-size:2750px;}
+    
+    }
+
+.container {
+    width:40%;
+    height:auto;
+    background: #f1f5f8;
+    
+    min-width:500px;
+    padding:.5rem;
+    border-radius:.5em ;
+    box-shadow: 0 8px 16px 0 black;
+
+}
+
+.heading {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:black;
+}
+
+.heading-img {
+    width:70px;
+    height:70px;
+}
+
+.form__label {
+    display:block;
+    margin:.5rem;
+}
+
+.form__input {
+    box-sizing: border-box;
+    padding:.5rem;
+    background-color:transparent;
+    border:1px solid transparent;
+    border-bottom: dashed 2px #13355e ;
+    font-family:'Pixelify Sans', sans-serif ;
+    color:#317873;
+    
+}
+
+.button {
+    box-sizing: border-box;
+    padding:.5rem;
+    border-radius: 20%;
+    transform: rotate(10deg);
+    transform-origin: center;
+    font-family: 'Pixelify Sans', sans-serif;
+    transition: all 0.3s;
+    color:#32de84;
+}
+
+.button:focus {
+    transform: rotate(0deg);
+}
+
+.form__input:focus {
+    outline: none;
+    border: solid 1px rgb(66, 66, 66);;
+}
+
+.toDoList {
+    text-align:left;
+    color:black;
+}
+
+.toDoList li:hover {
+    text-decoration: line-through wavy #24bffb;
+}
